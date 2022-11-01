@@ -5,6 +5,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -38,5 +42,13 @@ public class MainActivity extends AppCompatActivity {
         mFitnessList.add(new FitnessData("Mon 07 Nov 2022", FitnessType.Run,  25));
 
         mAdapter.setDummyList(mFitnessList);
+
+        FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.bt_add);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Add button pressed!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

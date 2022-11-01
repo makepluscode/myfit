@@ -40,4 +40,13 @@
             android:layout_height="match_parent"
             android:layout_margin="16dp"/>
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        app:tint="@color/white"
+        android:src="@drawable/ic_baseline_add_24"/>
 </FrameLayout>
